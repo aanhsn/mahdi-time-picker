@@ -10,15 +10,11 @@
 	'use strict';
 
 	//Picker Template
-	var template = '<style>' +
-    '.timepop{position: absolute;box-shadow: 0 1px 3px rgba(0,0,0,.5);background: #fff;border-radius: 4px;padding: 0 10px;z-index: 999;top: 100%;right: 0;}\n' +
-    '.timepop input[type=tel]{max-width: 35px!important;min-width: 35px;width: 35px;height: 35px;text-align: center;margin: auto;box-shadow: 0 0 10px rgba(0,0,0,.3) inset;}\n'+
-    '</style>' +
-    '<div style="width:120px;position:relative;">' +
+	var template = '<div style="width:120px;position:relative;">' +
 		'' +
-		'  <input style="min-width:90px;width:60px;float:left;" type="text" readonly ng-model="updatedTimeFormatted"/>' +
+		'  <input class="timeFormated" type="text" readonly ng-model="updatedTimeFormatted"/>' +
 		'' +
-		'  <md-icon style="float:left;padding-left:5px;" md-font-icon="icon-clock" ng-click="showPicker=!showPicker"></md-icon>' +
+		'  <md-icon md-font-icon="icon-clock" ng-click="showPicker=!showPicker"></md-icon>' +
 		'  <div style="clear: both;"></div>' +
 		'  <div ng-show="showPicker" class="timepop" layout="row" layout-align="space-around stretch">' +
 		'    <div layout="column">' +
